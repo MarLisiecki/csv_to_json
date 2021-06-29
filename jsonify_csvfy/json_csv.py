@@ -36,4 +36,7 @@ class JsonToCSV:
 
 
 if __name__ == "__main__":
-    pass
+    # print(JsonToCSV.get_dict_from_json(FILE_PATH_JSON))
+    content = JsonToCSV.get_content()
+    for i in content:
+        print(i)

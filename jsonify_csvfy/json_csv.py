@@ -29,7 +29,7 @@ class JsonToCSV:
 
     @staticmethod
     def get_dict_from_json(file_path):
-        global _dict_from_json
+        _dict_from_json = dict()
         with open(file_path) as json_file:
             _dict_from_json = json.load(json_file)
         return _dict_from_json
